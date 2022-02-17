@@ -13,5 +13,31 @@ var avatarwrapperEl = document.getElementById(avatarwrapperId)
 var avatarId = 'avatar'
 var avatarEl = document.getElementById(avatarId)
 
+
+debugger
+function alertValue() {
+    console.log(firstNameEl.value);
+    console.log(lastNameEl.value);
+    console.log(addressEl.value);
+    console.log(citiesEl.value);
+}
+
+
+
+firstNameEl.value = 'Marck'
+
+alertValue();
+
+
+
 lastNameEl.className = 'error-input last-name-input default-input';
+
+alertValue();
+
 lastNameEl.title = 'wrong last name';
+
+alertValue();
+
+citiesEl.value = 'Minsk'
+
+alertValue();
