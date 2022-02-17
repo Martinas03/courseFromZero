@@ -1,4 +1,4 @@
-<input value='Martinas' class='first-name-input default-input' id='first-name' />
+<input value='Martinas' title='Enter your name' class='first-name-input default-input' id='first-name' />
 <input value='Oliaka' class='last-name-input default-input' id='last-name' />
 <input value='Moscow' class='addres-input default-input' id='last-name' />
 
@@ -32,6 +32,7 @@
     var avatarEl = document.getElementById(avatarId)
 
     lastNameEl.className = 'error-input last-name-input default-input';
+    lastNameEl.title = 'wrong last name';
 </script>
 
 <style>
