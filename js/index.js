@@ -1,43 +1,53 @@
-var firstNameId = 'first-name'
-var firstNameEl = document.getElementById(firstNameId)
-var lastNameId = 'last-name'
-var lastNameEl = document.getElementById(lastNameId)
-var addressId = 'address'
-var addressEl = document.getElementById(addressId)
-var citiesId = 'cities'
-var citiesEl = document.getElementById(citiesId)
-var hobbiesId = 'hobbies'
-var hobbiesEl = document.getElementById(hobbiesId)
-var avatarwrapperId = 'avatar-wrapper'
-var avatarwrapperEl = document.getElementById(avatarwrapperId)
-var avatarId = 'avatar'
-var avatarEl = document.getElementById(avatarId)
+
+function alertValues(elementParameter) {
+    console.log(elementParameter.value);
+    console.log(elementParameter.className);
+}
+
+var firstNameId = 'first-name';
+var firstNameEl = document.getElementById(firstNameId);
+// alertFirstNameValues();
+alertValues(firstNameEl)
+
+var lastNameId = 'last-name';
+var lastNameEl = document.getElementById(lastNameId);
+// alertLastNameValues();
+alertValues(lastNameEl)
+
+var addressId = 'address';
+var addressEl = document.getElementById(addressId);
+// alertAddressValues();
+alertValues(addressEl)
+
+var citiesId = 'cities';
+var citiesEl = document.getElementById(citiesId);
+alertValues(citiesEl)
+
+var hobbiesId = 'hobbies';
+var hobbiesEl = document.getElementById(hobbiesId);
+// alertHobbiesValues();
+alertValues(hobbiesEl)
+
+var avatarwrapperId = 'avatar-wrapper';
+var avatarwrapperEl = document.getElementById(avatarwrapperId);
+var avatarId = 'avatar';
+var avatarEl = document.getElementById(avatarId);
+
+
 
 
 debugger
-function alertValue() {
-    console.log(firstNameEl.value);
-    console.log(lastNameEl.value);
-    console.log(addressEl.value);
-    console.log(citiesEl.value);
-}
 
 
 
-firstNameEl.value = 'Marck'
 
-alertValue();
-
+firstNameEl.value = 'Marck';
 
 
 lastNameEl.className = 'error-input last-name-input default-input';
 
-alertValue();
 
 lastNameEl.title = 'wrong last name';
 
-alertValue();
 
-citiesEl.value = 'Minsk'
-
-alertValue();
+citiesEl.value = 'Minsk';
